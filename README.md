@@ -123,7 +123,7 @@ export const Item: React.FC<ItemProps> = ({ item }) => {
 };
 ```
 
-You can check out example CRA in this repo [./example](./example) and a build demo [here](https://michal-wrzosek.github.io/subscribe-context)
+You can check out example CRA in this repo [./example](./example) and a build demo [here](https://michal-wrzosek.github.io/subscribe-context/)
 
 ## Hooks
 

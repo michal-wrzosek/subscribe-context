@@ -193,10 +193,13 @@ YourContext.useSubscription(nextValue => console.log('nextValue', nextValue));
 ​
 Some time ago, my friend, [Enes Tüfekçi](https://github.com/enesTufekci), showed me a cool way to solve the issues with Context API mutations causing your components to be rerendered everytime any value in your context changes. I did not found anyone else showing this solution, so here am I, sharing this concept with you.
 ​
+
 Let's say you have an app where you can select one Item at a time and you want to keep this state in context to be globally available for different components.
 ​
+
 The ususal approach would be to store the state inside the context. So you could for example keep in context the id of currently selected Item and a functions to mutate the state. This approach causes lots of trouble with unnecessary rerenders of your components consuming your context.
 ​
+
 The core concept here is to put in your context only a Subject - an observable, that you can subscribe to and you can mutate its value. That way the value of your context never changes. You can, though, subscirbe to Subject and react to its state changes. Then on Subject value changes you can mutate your local components state. That will allow you to control when you want to rerender your component.
 
 This concept is the foundation of this package.

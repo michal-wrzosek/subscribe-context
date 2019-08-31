@@ -45,7 +45,7 @@ export const createContext = <T extends any>({ initialValue }: { initialValue: T
     return subject.next;
   };
 
-  const useValueWithSubscription = (shouldRerenderFunc: (newValue: T, prevValue: T) => boolean) => {
+  const useValueWithSubscription = (shouldRerenderFunc: (nextValue: T, prevValue: T) => boolean) => {
     const { subject } = React.useContext(Context);
     const initialValue = subject.getValue();
     const [value, setValue] = React.useState(initialValue);

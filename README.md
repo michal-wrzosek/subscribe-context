@@ -6,6 +6,23 @@ _The Subject pattern used in this package comes from idea of my friend [Enes Tü
 
 ---
 
+**To install run:**
+
+```
+npm install subscribe-context
+```
+
+This package comes with TypeScript support out of the box so you don't need to install anything else.
+
+**Peer dependencies:**
+
+```
+"react": "^16.8.6",
+"react-dom": "^16.8.6"
+```
+
+---
+
 ## How to use - selected item example
 
 1. Create a new context

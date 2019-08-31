@@ -1,3 +1,3 @@
-import { TestComponent } from './components/TestComponent/TestComponent';
+import { createContext } from './context/createContext';
 
-export { TestComponent };
+export { createContext };
